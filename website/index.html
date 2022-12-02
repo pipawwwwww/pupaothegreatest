@@ -1,0 +1,392 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>SamSanPass</title>
+    <link rel = "icon" href = "images/icon.png"  class="icon" type = "image/x-icon">
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!--Fonts-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Anton&family=Bebas+Neue&family=Poppins:ital,wght@1,900&family=Roboto:ital,wght@0,300;0,400;1,900&display=swap" rel="stylesheet">
+    <!--css-->
+    <link rel="stylesheet" href="./styles/general.css" type="text/css">
+    <link rel="stylesheet" href="./styles/header.css" type="text/css">
+    <link rel="stylesheet" href="./styles/content.css" type="text/css">
+    <link rel="stylesheet" href="./styles/footer.css" type="text/css">
+    <!--chatbot-->
+    <link rel="stylesheet" href="./styles/chat.css">
+    <link rel="stylesheet" href="./https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+
+<body>
+    <!-------------Navigation Bar------------->
+    <div class="header">
+        <div class="navbarcont">
+        <div class="left">
+        <img src="./images/logo.png" class="logo">
+        <h1><a href="./index.html" class="samsan">SAMSANPASS</a></h1>
+        </div>
+
+        <div class="right">
+            <nav class="navbar">
+                <ul>
+                    <li><a href="./pages/features.html">Features</a></li>
+                    <li><a href="./pages/help.html">Help</a></li>
+                    <li><a href="./pages/help.html">Add to chrome</a></li>
+                </ul>
+            </nav>
+            <!--<a href="#" class="addext">Add to Chrome</a>-->
+            <a href="./pages/login.html" class="login">Log In</a>
+            
+        </div>
+    </div>
+    </div>
+    <!-------------Navigation Bar END------------->
+
+    <!----chat bot-->
+    <div class="chat-bar-collapsible">
+        <button id="chat-button" type="button" class="collapsible">Chat with us!
+            <i id="chat-icon" style="color: #fff;" class="fa fa-fw fa-comments-o"></i>
+        </button>
+
+        <div class="content">
+            <div class="full-chat-block">
+                <!-- Message Container -->
+                <div class="outer-container">
+                    <div class="chat-container">
+                        <!-- Messages -->
+                        <div id="chatbox">
+                            <h5 id="chat-timestamp"></h5>
+                            <p id="botStarterMessage" class="botText"><span>Loading...</span></p>
+                        </div>
+
+                        <!-- User input box -->
+                        <div class="chat-bar-input-block">
+                            <div id="userInput">
+                                <input id="textInput" class="input-box" type="text" name="msg"
+                                    placeholder="Tap 'Enter' to send a message">
+                                <p></p>
+                            </div>
+
+                            <div class="chat-bar-icons">
+                                <i id="chat-icon" style="color: crimson;" class="fa fa-fw fa-heart"
+                                    onclick="heartButton()"></i>
+                                <i id="chat-icon" style="color: #333;" class="fa fa-fw fa-send"
+                                    onclick="sendButton()"></i>
+                            </div>
+                        </div>
+
+                        <div id="chat-bar-bottom">
+                            <p></p>
+                        </div>
+
+                    </div>
+                </div>
+
+            </div>
+        </div>
+
+    </div>
+    <!----chat bot end-->
+
+
+
+
+
+    <!-------------landing Section front page------------->
+        <div class="landing">
+            <div class="container1">
+            <div class="headline">
+                <h2>Secure. Safe. Reliable.</h2>
+                    <p class="frontpageP">Save and secure your passords with ease. You'll never have to worry about forgetting yourpasswords on your digital and online accounts with just a few clicks. Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptas cum cumque veritatis error voluptatibus assumenda sapiente, cupiditate iure. Lorem ipsum dolor sit amet consectetur adipisicing elit. Assumenda maiores ad eos. Ad eius delectus, aperiam officiis autem illo at architecto earum, quod tenetur eos sunt, voluptas iusto veniam vero?
+                    </p>
+                    <div class="buttonplacement">
+                        <div class="firstbutt">
+                            <a href="./dashboard/dashboard.html" class="button1">Dashboard</a>
+                            <p class="buttontext">User Interface for the password manager</p>
+                        </div>
+            
+                        <div class="secondbutt">
+                            <a href="./pages/createaccount.html" class="button2">Register</a>
+                                <p class="buttontext">edit text edit text</p>
+                        </div>
+                    </div>   
+
+            </div>
+
+            <div class="frontimage">
+                <img src="./images/hero.webp" class="sample">
+            </div>
+
+            </div>
+        </div>
+          <!-------------landing Section front page end------------->
+      
+
+    <!----LOGO TAGS-->
+    <div class="logocontainer">
+        <div class="icons">
+            <img src="./images/html.png" class="html">
+            <img src="./images/css.png" class="css">
+            <img src="./images/javascript.png" class="java">
+            <img src="./images/php.png" class="php">
+            <img src="./images/vscode.png" class="vscode">
+            
+        </div>
+    </div>
+    <!----LOGO TAGS END-->
+
+
+
+    <div class="contentscontainer">
+        <!-------------1st feature front page------------->
+        <div class="firstfeature">
+            <div class="benefit1cont">
+                <div class="content1a">
+                    <div class="img1">
+                    <img src="./images/benefit1.webp" class="firstpic">
+                    </div>
+                </div>
+
+                <div class="content1b">
+                    <div class="descriptioncontainer1">
+                    <div class="title1">
+                        <h3>LOREM IPSUM DOLOW SIT AMET</h3>
+                    </div>
+
+                    <div class="desc1">
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptate neque, dignissimos iure nihil itaque ullam ex iusto explicabo fuga voluptatum quae. Voluptate architecto explicabo labore repellat at ipsam, mollitia veniam. Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequuntur saepe at suscipit illum voluptatum libero doloremque excepturi beatae voluptates quis, optio, error accusamus neque explicabo minima mollitia atque harum expedita. Lorem ipsum dolor sit amet consectetur adipisicing elit. Necessitatibus expedita ratione iste repellat tenetur recusandae tempora reiciendis, atque odit, soluta quia a cumque aliquid magni molestiae, officiis veritatis alias natus.</p>
+                    </div>
+                    </div>
+            </div>
+            </div>
+        </div>
+        <!-------------1st feature front page END ------------->
+
+        <!-------------2nd feature front page------------->
+        <div class="firstfeature">
+            <div class="benefit1cont">
+                <div class="content1a">
+                    <div class="img1">
+                    <img src="./images/benefit2.webp" class="secondpic">
+                    </div>
+                </div>
+
+                <div class="content1b">
+                    <div class="descriptioncontainer1">
+                    <div class="title1">
+                        <h3>LOREM IPSUM DOLOW SIT AMET</h3>
+                    </div>
+
+                    <div class="desc1">
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptate neque, dignissimos iure nihil itaque ullam ex iusto explicabo fuga voluptatum quae. Voluptate architecto explicabo labore repellat at ipsam, mollitia veniam. Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequuntur saepe at suscipit illum voluptatum libero doloremque excepturi beatae voluptates quis, optio, error accusamus neque explicabo minima mollitia atque harum expedita. Lorem ipsum dolor sit amet consectetur adipisicing elit. Necessitatibus expedita ratione iste repellat tenetur recusandae tempora reiciendis, atque odit, soluta quia a cumque aliquid magni molestiae, officiis veritatis alias natus.</p>
+                    </div>
+                    </div>
+            </div>
+            </div>
+        </div>
+        <!-------------2nd feature front page END ------------->
+
+        <!-------------3rd feature front page------------->
+        <div class="firstfeature">
+            <div class="benefit1cont">
+                <div class="content1a">
+                    <div class="img1">
+                    <img src="./images/benefit3.webp" class="thirdpic">
+                    </div>
+                </div>
+
+                <div class="content1b">
+                    <div class="descriptioncontainer1">
+                    <div class="title1">
+                        <h3>LOREM IPSUM DOLOW SIT AMET</h3>
+                    </div>
+
+                    <div class="desc1">
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptate neque, dignissimos iure nihil itaque ullam ex iusto explicabo fuga voluptatum quae. Voluptate architecto explicabo labore repellat at ipsam, mollitia veniam. Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequuntur saepe at suscipit illum voluptatum libero doloremque excepturi beatae voluptates quis, optio, error accusamus neque explicabo minima mollitia atque harum expedita. Lorem ipsum dolor sit amet consectetur adipisicing elit. Necessitatibus expedita ratione iste repellat tenetur recusandae tempora reiciendis, atque odit, soluta quia a cumque aliquid magni molestiae, officiis veritatis alias natus.</p>
+                    </div>
+                    </div>
+            </div>
+            </div>
+        </div>
+        <!-------------3rd feature front page END ------------->
+    </div>
+
+    <!-------------2nd feature front page-------------
+    <div class="secondfeature">
+        <div class="benefit2cont">
+            <div class="content2a">
+                <div class="images/img2">
+                    <img src="/images/benefit2.webp" class="secondpic">
+                    </div>
+            </div>
+            <div class="content2b">
+                <div class="descriptioncontainer2">
+                    <div class="title2">
+                        <h3>LOREM IPSUM DOLOW SIT AMET</h3>
+                    </div>
+    
+                    <div class="desc2">
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptate neque, dignissimos iure nihil itaque ullam ex iusto explicabo fuga voluptatum quae. Voluptate architecto explicabo labore repellat at ipsam, mollitia veniam. Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequuntur saepe at suscipit illum voluptatum libero doloremque excepturi beatae voluptates quis, optio, error accusamus neque explicabo minima mollitia atque harum expedita. Lorem ipsum dolor sit amet consectetur adipisicing elit. Necessitatibus expedita ratione iste repellat tenetur recusandae tempora reiciendis, atque odit, soluta quia a cumque aliquid magni molestiae, officiis veritatis alias natus.</p>
+                     </div>
+                     </div>
+            </div>
+        </div>
+    </div>
+    ----------2nd feature front page END ------------->
+
+
+    <!-------------3rd feature front page-------------
+    <div class="thirdfeature">
+        <div class="benefit3cont">
+            <div class="content3a">
+                <div class="images/img3">
+                <img src="/images/benefit3.webp" class="thirdpic">
+                </div>
+            </div>
+
+            <div class="content3b">
+                <div class="descriptioncontainer3">
+                <div class="title3">
+                    <h3>LOREM IPSUM DOLOW SIT AMET</h3>
+                </div>
+
+                <div class="desc3">
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptate neque, dignissimos iure nihil itaque ullam ex iusto explicabo fuga voluptatum quae. Voluptate architecto explicabo labore repellat at ipsam, mollitia veniam. Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequuntur saepe at suscipit illum voluptatum libero doloremque excepturi beatae voluptates quis, optio, error accusamus neque explicabo minima mollitia atque harum expedita. Lorem ipsum dolor sit amet consectetur adipisicing elit. Necessitatibus expedita ratione iste repellat tenetur recusandae tempora reiciendis, atque odit, soluta quia a cumque aliquid magni molestiae, officiis veritatis alias natus.</p>
+                 </div>
+                 </div>
+        </div>
+        </div>
+    </div>
+    ----------3rd feature front page------------->
+
+
+
+
+    <!-------------Tile Section front page------------->
+    <div class="tiles">
+        <div class="tileone">
+            <div class="plan"><p>Unregistered</p></div>
+
+            <div class="description">
+                <div class="info"><p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ex nihil non nobis quidem asperiores inventore praesentium vitae nam similique, nesciunt quibusdam iste repudiandae laudantium delectus perspiciatis ducimus? Impedit, facilis ea.</p>
+                </div>
+            </div>
+
+            <div class="trynow">
+                <a href="#" class="botton">Try Now</a>
+            </div>
+
+            <div class="textfeatures1">
+            <div class="features">
+                <div class="fheader">Features</div>
+                <div class="firstft">
+                    <img src="./images/check.png" class="check">
+                    <p>limited to 5 passwords only</p>
+                </div>
+
+                <div class="firstft">
+                    <img src="./images/check.png" class="check">
+                    <p>Access on one device only</p>
+                </div>
+
+                <div class="firstft">
+                    <img src="./images/check.png" class="check">
+                    <p>30-day Premium trial</p>
+                </div>
+
+                <div class="firstft">
+                    <img src="./images/check.png" class="check">
+                    <p>Save and autofill passwords</p>
+                </div>
+
+                <div class="firstft">
+                    <img src="./images/check.png" class="check">
+                    <p>Passwordless login</p>
+                </div>
+
+                <div class="firstft">
+                    <img src="./images/check.png" class="check">
+                    <p>Password generator</p>
+                </div>
+
+                 </div>
+            </div>
+        </div>
+
+
+        <div class="tiletwo">
+            <div class="plan"><p>Registered</p></div>
+
+            <div class="description">
+                 <div class="info">
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ex nihil non nobis quidem asperiores inventore praesentium vitae nam similique, nesciunt quibusdam iste repudiandae laudantium delectus perspiciatis ducimus? Impedit, facilis ea.</p>
+                 </div>
+            </div>
+
+            <div class="trynow">
+                 <a href="./pages/createaccount.html" class="botton">Start your registered account</a>
+            </div>
+
+
+            <div class="textfeatures2">
+            <div class="features">
+                <div class="fheader">Features</div>
+                <div class="firstft">
+                     <img src="./images/check.png" class="check">
+                    <p>Unlimited storage of account passwords</p>
+                </div>
+
+                <div class="firstft">
+                    <img src="./images/check.png" class="check">
+                     <p>Access on any device type</p>
+                </div>
+
+                <div class="firstft">
+                     <img src="./images/check.png" class="check">
+                        <p>lifetime benefits</p>
+                </div>
+
+                <div class="firstft">
+                    <img src="./images/check.png" class="check">
+                     <p>Save and autofill passwords</p>
+                </div>
+
+                <div class="firstft">
+                     <img src="./images/check.png" class="check">
+                        <p>Passwordless login</p>
+                </div>
+
+                <div class="firstft">
+                 <img src="./images/check.png" class="check">
+                    <p>Password generator</p>
+                </div>
+
+            </div>
+        </div>
+         </div>
+    </div>
+ <!-------------Tile Section front page------------->
+
+ 
+
+
+    <!-------------Footer Section front page------------->
+    <div class="footer">    </div>
+    <!-------------Footer Section front page end------------->
+
+    
+</body>
+
+
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+<script src="script/responses.js"></script>
+<script src="script/chat.js"></script>
+
+
+</html>
+
+

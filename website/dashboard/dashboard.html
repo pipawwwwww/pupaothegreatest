@@ -1,0 +1,216 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>VAULT</title>
+    <link rel = "icon" href = "/dashboard/vault2.png"  class="icon" type = "image/x-icon">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Kanit:wght@400;600;800;900&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600&display=swap" rel="stylesheet">
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+
+    
+    <link rel="stylesheet" href="dashboard.css">
+    <link rel="stylesheet" href="notestry.css">
+    <link rel="stylesheet" href="passwordgenerator.css">
+    
+    <link rel="stylesheet" href="https://unicons.iconscout.com/release/v4.0.0/css/line.css">
+    <!--box icons-->
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+</head>
+<body>
+    <div id="preloader"></div>
+        
+            <div class="sidebarcontainer">
+                <div class="topbar">
+                    <a href="../index.html">
+                        <div class="logoname text">
+                            <img src="vault2.png">
+                            <h1>VAULT</h1>
+                            <span class="minitext"><p>by samsantech</p></span>
+                        </div>
+                    </a>
+                </div>
+                
+                <div class="togglecont"><i class='bx bx-menu toggle'></i></div>
+
+                <div class="mainbar">
+                    <button class="tab_button" data-tab-target="#passwordmanager">
+                        <i class='bx bx-shield-quarter'></i>
+                        <h2>Password Manager</h2>
+                    </button>
+    
+                    <button class="tab_button" data-tab-target="#passwordgenerator">  
+                        <i class='bx bx-dice-5' ></i>                   
+                        <h2>Password Generator</h2>
+                    </button>
+
+                    <button class="tab_button" data-tab-target="#notes">   
+                        <i class='bx bx-note' ></i>                  
+                        <h2>Notes</h2>
+                    </button>
+                
+                    <button class="tab_button" data-tab-target="#help">     
+                        <i class='bx bx-help-circle' ></i>                 
+                        <h2>Help</h2>
+                    </button>
+    
+                    <button class="tab_button" data-tab-target="#settings">      
+                        <i class='bx bx-cog' ></i>            
+                        <h2>Settings</h2>
+                    </button>
+    
+                    <button class="tab_button" data-tab-target="#logout">    
+                        <i class='bx bx-log-out' ></i>                  
+                        <h2>Log out</h2>
+                    </button>
+                </div>
+
+            </div>
+        
+
+        
+            <section id="main">
+                <div class="tab-content">
+
+                    <div id="bground">
+                        <div class="coverpage" id="coverpage">
+                            Welcome, Deux! 
+                        </div>
+                    </div>
+
+                    <div id="passwordmanager" data-tab-content>
+                        <div class="passman-header">
+                            <div class="left-header">
+
+                            </div>
+                            <div class="right-header">
+                                <i class='bx bx-user-circle'></i>
+                                <div class="email-rightheader">
+                                    <span class="email" id="email">limdeux25@gmail.com</span>
+                                    <span class="accountstatus" id="accountstatus">registered</span>
+                                </div>
+                                
+                            </div>
+                        </div>
+
+                        <div class="passman-main">
+                            Main
+                        </div>
+
+                        <div class="passman-side">
+                            Side
+                        </div>
+                    </div>
+
+                    <div id="passwordgenerator" data-tab-content>
+                        <div class="container">
+                            <h4>Password Generator</h4>
+                            <div class="result-container">
+                                <span id="result"></span>
+                                <button class="btn" id="clipboard">
+                                    <i class='bx bx-clipboard'></i>
+                                </button>
+                            </div>
+                            <div class="settings">
+                                <div class="setting">
+                                    <label>Password length</label>
+                                    <input type="number" id="length" min='4' max='20' value='20' />
+                                </div>
+                                <div class="setting">
+                                    <label>Include uppercase letters</label> 
+                                    <input type="checkbox" id="uppercase" checked />
+                                </div>
+                                <div class="setting">
+                                    <label>Include lowercase letters</label> 
+                                    <input type="checkbox" id="lowercase" checked />
+                                </div>
+                                <div class="setting">
+                                    <label>Include numbers</label> 
+                                    <input type="checkbox" id="numbers" checked />
+                                </div>
+                                <div class="setting">
+                                    <label>Include symbols</label> 
+                                    <input type="checkbox" id="symbols" checked />
+                                </div>
+                            </div>
+                            <button class="btn btn-large" id="generate">
+                                Generate password
+                            </button>
+                        </div>
+                    </div>
+
+                    <div id="notes" data-tab-content>
+                           <!---<div class="notes-container" id="notesapp">
+                                <button class="add-note" type="button">+</button>
+                            </div>--> 
+                            <div class="popup-box">
+                                <div class="popup">
+                                  <div class="content">
+                                    <header>
+                                      <p></p>
+                                      <i class="uil uil-times"></i>
+                                    </header>
+                                    <form action="#">
+                                      <div class="row title">
+                                        <label>Title</label>
+                                        <input type="text" spellcheck="false">
+                                      </div>
+                                      <div class="row description">
+                                        <label>Description</label>
+                                        <textarea spellcheck="false"></textarea>
+                                      </div>
+                                      <button></button>
+                                    </form>
+                                  </div>
+                                </div>
+                              </div>
+                              <div class="wrapper">
+                                <li class="add-box">
+                                  <div class="icon"><i class='bx bx-plus'></i></div>
+                                  <p>Add new note</p>
+                                </li>
+                              </div>
+                    </div>
+
+                    <div id="help" data-tab-content>
+                        help
+                    </div>
+
+                    <div id="settings" data-tab-content>
+                        settings
+                    </div>
+
+                    <div id="logout" data-tab-content>
+                        <h1>Log Out</h1>
+                    </div>
+
+                </div>
+            </section>
+        
+        
+    <script src="dashboard.js"></script>
+    <script src="particles.js"></script>
+    <script src="app.js"></script>
+    <script src="passwordgenerator.js"></script>
+    <!--<script src="notes.js"></script>-->
+    <script src="notestry.js"></script>
+    <script>
+        var loader = document.getElementById("preloader");
+        window.addEventListener("load", function() {
+            loader.style.display = "none";
+        })
+    </script>
+   
+</body>
+</html>

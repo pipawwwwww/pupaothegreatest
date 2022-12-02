@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../styles/createaccount.css">
+    <link rel="stylesheet" href="../styles/general.css">
+    <title>Create Account</title>
+</head>
+<body>
+    <div class="bodycontainer">
+    <div class="extension">
+        <div class="header">
+            <h1>Create Account</h1>
+        </div>
+
+        <form class ="wrappercontainer" action="register.php" method="post" id="register">
+            <div class="wrapper">
+                <div class="input-data">
+                   <input type="text" name ="name" required>
+        
+                   <div class="underline"></div>
+                   <label>Name: </label>
+                </div>
+             </div>
+        
+             <div class="wrapper">
+                <div class="input-data">
+                   <input type="email" name ="email" required>
+        
+                   <div class="underline"></div>
+                   <label>Email: </label>
+                </div>
+             </div>
+
+             <div class="wrapper">
+                <div class="input-data">
+                   <input type="text" name ="username" required>
+                   <div class="underline"></div>
+                   <label>Username: </label>
+                </div>
+             </div>
+
+             <div class="wrapper">
+                <div class="input-data">
+                   <input type="password" name ="password" required>
+                   <div class="underline"></div>
+                   <label>Master Password: </label>
+                </div>
+             </div>
+
+             <div class="wrapper">
+                <div class="input-data">
+                   <input type="password" name ="cpassword" required>
+        
+                   <div class="underline"></div>
+                   <label>Confirm Master Password: </label>
+                </div>
+             </div>
+
+             <div class="buttoncontainer">
+               <div class="regbutton">
+                  <input type = "submit" class="button1"/>
+               </div>
+            </div>
+            </form>
+           
+      </div>
+    </div>
+      <div class="container1">
+        <div class="back"><a href="../index.html"><p>back to home page</p></a></div>
+    </div>
+</body>
+</html>
+
